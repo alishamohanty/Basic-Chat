@@ -7,13 +7,14 @@ app.get('/', function(req, res){
     });
 
 io.on('connection', function(socket){
+    console.log('Made a connection of Socket-id ', socket.id)
     socket.on('chat message', function(msg){
         io.emit('chat message', msg);
     });
     socket.on('disconnect', function(){
-        console.log('user disconnected');
+        console.log('user disconnected of Socket id',socket.id);
         });
     });
-http.listen(3000, function(){
-  console.log('listening on *:3000');
+http.listen(3001, function(){
+  console.log('listening on *:3001');
 });

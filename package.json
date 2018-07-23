@@ -1,0 +1,23 @@
+{
+  "name": "basic-chat",
+  "version": "1.0.0",
+  "description": "A simple Chatting app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alishamohanty/Basic-Chat.git"
+  },
+  "author": "Alisha Mohanty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alishamohanty/Basic-Chat/issues"
+  },
+  "homepage": "https://github.com/alishamohanty/Basic-Chat#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socket.io": "^2.1.1"
+  }
+}

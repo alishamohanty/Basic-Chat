@@ -10,22 +10,21 @@
 </head>
 <body>
         <div class="container msg">
-                <div id="messages"></div>
+                <div id="messages" class="messages"></div>
+                <div class="send">
+                        <form action="">
+                                <input id="h" autocomplete="off" placeholder="Handel" class="handel" />
+                                <input id="m" autocomplete="off" placeholder="Message" class="message" />
+                                <button class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
         </div>
-            <div class="send">
-                <form action="">
-                        <input id="h" autocomplete="off" placeholder="Handel" />
-                        <br>
-                        <input id="m" autocomplete="off" placeholder="Message" />
-                        <br>
-                        <button class="btn btn-primary">Send</button>
-                </form>
-            </div>
     <script src="/socket.io/socket.io.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
      $(function () {
     var socket = io();
+    $('#messages').addClass("messages")
     $('form').submit(function(){
       socket.emit('chat message', {
           Handel: $('#h').val(),

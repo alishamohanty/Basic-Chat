@@ -2,16 +2,30 @@ body {
     color: blue;
 }
 .container {
-    justify-content: center;
     display: flex;
+}
+.messages {
+    overflow: auto;
+    height: 70vh;
+    color: brown;
+}
+ .send {
+  background-color:darkslateblue;
+  position: absolute;
+  bottom: 2px;
+}
+.send .handel {
+    width: 10vw;
+}
+.send .message {
+    width: 47vw;
+    padding-right: 2px;
+}
+.msg{
+    background-color: azure;
     border: solid blue;
     height: 80vh;
     width: 60vw;
-}
-.send form{
-  margin-top: 500px;
-  background-color: aquamarine;
-}
-.msg{
-    background-color: antiquewhite;
+    position: relative;
+    float: initial;
 }

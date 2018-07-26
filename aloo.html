@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="/mystyle.css" />
+</head>
+<body>
+        <div class="container msg">
+                <div id="messages">Box</div>
+        </div>
+            <div class="container send">
+                <form action="">
+                        <input id="h" autocomplete="off" placeholder="Handel" />
+                        <br>
+                        <input id="m" autocomplete="off" placeholder="Message" />
+                        <br>
+                        <button class="btn btn-primary">Send</button>
+                </form>
+            </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/chat.js" />
+</body>
+</html>

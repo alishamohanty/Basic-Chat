@@ -1,0 +1,17 @@
+body {
+    color: blue;
+}
+.container {
+    justify-content: center;
+    display: flex;
+    border: solid blue;
+    height: 80vh;
+    width: 60vw;
+}
+.send form{
+  margin-top: 500px;
+  background-color: aquamarine;
+}
+.msg{
+    background-color: antiquewhite;
+}
